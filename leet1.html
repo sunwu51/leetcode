@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:8080/1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/bootstrap.min.css">
+    <script src="./dist/jquery-1.10.2.min.js"></script>
+    <title>Index</title>
+    <style>
+        tr {
+            height: 70px;
+        }
+        td{
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+
+<body style="">
+    <script>
+        var showindex=-1;
+    </script>
+    <table class="table table-bordered table-responsive table-striped table-hover table-condensed">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>类型</th>
+                <th>题目</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr class="always" index="1">
+                <td>1</td>
+                <td>已完成</td>
+                <td>two sum </td>
+                <td>数组a中找到两个数相加和为target的。 给定a,target。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="1">
+                <td colspan="4">
+                    思路：遍历，用HashMap存储，并在存之前查看是否Map已有target-a[i]。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=1]').mouseover(function(){
+                    if(showindex!= 1 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=1]').show(100);
+                        showindex= 1 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="2">
+                <td>2</td>
+                <td>已完成</td>
+                <td>add 2 numbers</td>
+                <td>链表相加1-&gt;2-&gt;3 + 9 = 0-&gt;3-&gt;3</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="2">
+                <td colspan="4">
+                    思路：注意进位，然后注意最后结尾也是进位的时候需要追加一个元素。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=2]').mouseover(function(){
+                    if(showindex!= 2 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=2]').show(100);
+                        showindex= 2 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="3">
+                <td>3</td>
+                <td>已完成</td>
+                <td>Longest Substring Without Repeating Characters</td>
+                <td>求字符串中最长的没有重复字符的字串长度。如pwwke中wke，返回3。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="3">
+                <td colspan="4">
+                    思路：转换为求相同字符夹杂的长度，最长的是多少。Map(或128长的数组)记录字符和出现的位置，res记录结果。遍历填充Map，当Map已有该字符的时候，当前位置i-Map中记录位置，res和这个值比较后保留交大值。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=3]').mouseover(function(){
+                    if(showindex!= 3 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=3]').show(100);
+                        showindex= 3 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="4">
+                <td>4</td>
+                <td>已完成</td>
+                <td>Median of Two Sorted Arrays</td>
+                <td>两个排好序的数组，求他们的中位数</td>
+            </tr>
+            <tr class="sometimes" style="display:none; color: rgb(237, 255, 202); background: rgb(8, 8, 8);" index="4">
+                <td colspan="4">
+                    思路：中位数其实是求一个数，比这个数大的有一半，比这个数小的有一半。所以问题转为求数组A(假设A长度比B长)中的一个切割点，这个切割点迫使B也有一个对应的切割点，使得A.left+B.left的长度与右侧相当，然后判断这两个切割点的四个边界，是不是合适的大小关系即可。二分查找切割点，所以复杂度logn
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=4]').mouseover(function(){
+                    if(showindex!= 4 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=4]').show(100);
+                        showindex= 4 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="5">
+                <td>5</td>
+                <td>已完成</td>
+                <td>Longest Palindromic Substring    </td>
+                <td>给定字符串s，求s中含有的回文子字符串中最长的那个。如s=acbbcd则返回cbbc。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="5">
+                <td colspan="4">
+                    思路：回文的对称中心可能有2n+1个位置，分别遍历这些位置，然后看两侧的是不是对称的，取最长回文出来。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=5]').mouseover(function(){
+                    if(showindex!= 5 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=5]').show(100);
+                        showindex= 5 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="6">
+                <td>6</td>
+                <td>已完成</td>
+                <td>ZigZag Conversion </td>
+                <td>将一个字符串按照这个数组形式存放，然后逐行打印。给定字符串s和输出数组的行数。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="6">
+                <td colspan="4">
+                    思路：求出一个周期的总字符数，看需要多少个周期，然后申请足够大小的二维数组。然后遍历s，i%周期，决定了摆放方式和位置。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=6]').mouseover(function(){
+                    if(showindex!= 6 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=6]').show(100);
+                        showindex= 6 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="7">
+                <td>7</td>
+                <td>已完成</td>
+                <td>Reverse Integer</td>
+                <td>123---&gt;321</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="7">
+                <td colspan="4">
+                    思路：res=10*res+t%10;t=t/10;
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=7]').mouseover(function(){
+                    if(showindex!= 7 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=7]').show(100);
+                        showindex= 7 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="8">
+                <td>8</td>
+                <td>已完成</td>
+                <td>String to Integer (atoi)    </td>
+                <td>字符串转数字函数的实现。</td>
+            </tr>
+            <tr class="sometimes" style="color: rgb(237, 255, 202); background: rgb(8, 8, 8); display: none;" index="8">
+                <td colspan="4">
+                    思路：注意排除掉一些情况即可，例如符号位，e，小数点等。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=8]').mouseover(function(){
+                    if(showindex!= 8 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=8]').show(100);
+                        showindex= 8 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="9">
+                <td>9</td>
+                <td>已完成</td>
+                <td>Palindrome Number</td>
+                <td>判断a是不是回文数字，a=121返回true。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="9">
+                <td colspan="4">
+                    思路：可以用第7题中的方式得到反转后的数字，然后看是不是等于源数字。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=9]').mouseover(function(){
+                    if(showindex!= 9 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=9]').show(100);
+                        showindex= 9 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="10">
+                <td>10</td>
+                <td>未完成</td>
+                <td>Regular Expression Matching</td>
+                <td>正则.和*的实现</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="10">
+                <td colspan="4">
+                    思路：** 这个题比较麻烦，还没有做。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=10]').mouseover(function(){
+                    if(showindex!= 10 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=10]').show(100);
+                        showindex= 10 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="11">
+                <td>11</td>
+                <td>已完成</td>
+                <td>Container With Most Water</td>
+                <td>盛水问题1，这个是数组的数中可以选任意两个作为堤坝，盛水，求最多的水</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="11">
+                <td colspan="4">
+                    思路：一开始取0 len-1作为堤坝，然后较小的往中间靠。直到位置重叠。中途不断记录水最多的值。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=11]').mouseover(function(){
+                    if(showindex!= 11 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=11]').show(100);
+                        showindex= 11 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="12">
+                <td>12</td>
+                <td>已完成</td>
+                <td>Integer to Roman</td>
+                <td>数字转罗马数字</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="12">
+                <td colspan="4">
+                    思路：这个题和13题，都需要了解罗马数字，暂时放弃了
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=12]').mouseover(function(){
+                    if(showindex!= 12 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=12]').show(100);
+                        showindex= 12 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="13">
+                <td>13</td>
+                <td>已完成</td>
+                <td>Roman to Integer</td>
+                <td>罗马数字转数字</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="13">
+                <td colspan="4">
+                    思路：这个题和12题，都需要了解罗马数字，暂时放弃了
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=13]').mouseover(function(){
+                    if(showindex!= 13 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=13]').show(100);
+                        showindex= 13 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="14">
+                <td>14</td>
+                <td>已完成</td>
+                <td>Longest Common Prefix    		33.0%	Easy</td>
+                <td>最长公共前缀，给定字符串数组，求公共前缀。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="14">
+                <td colspan="4">
+                    思路：遍历数组，一开始res=a[0]。然后res和a[1]比较得到公共前缀，然后继续往下
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=14]').mouseover(function(){
+                    if(showindex!= 14 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=14]').show(100);
+                        showindex= 14 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="15">
+                <td>15</td>
+                <td>已完成</td>
+                <td>3Sum    		23.3%	Medium</td>
+                <td>数组中3个数的和是给定值，求这三个数。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="15">
+                <td colspan="4">
+                    思路：先sort，然后遍历。s=target-a[i]，此时求i到最后的数中和是s的两个数。取i+1和len-1然后不断向中间靠即可。	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=15]').mouseover(function(){
+                    if(showindex!= 15 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=15]').show(100);
+                        showindex= 15 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="16">
+                <td>16</td>
+                <td>已完成</td>
+                <td>3Sum Closest    		39.3%	Medium	</td>
+                <td>数组中3个数的和与给定值相差最少，求这三个数</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="16">
+                <td colspan="4">
+                    思路：思路和15一样，只不过要记录差值。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=16]').mouseover(function(){
+                    if(showindex!= 16 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=16]').show(100);
+                        showindex= 16 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="17">
+                <td>17</td>
+                <td>DFS</td>
+                <td>Letter Combinations of a Phone Number    		40.3%	Medium	</td>
+                <td>电话按键中有字母，如2键可以是abc三种字母，3是def。给定字符串23，则有3x3种组合可能。给定数字字符串，列出代表的字母组和可能。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="17">
+                <td colspan="4">
+                    思路：DFS 截止条件level=字符串长；候选人是当前数字代表的几种字符；筛选条件是都可以用；
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=17]').mouseover(function(){
+                    if(showindex!= 17 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=17]').show(100);
+                        showindex= 17 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="18">
+                <td>18</td>
+                <td>未完成</td>
+                <td>4Sum    		29.6%	Medium	</td>
+                <td>数组中4个数字的和是给定值，求这四个数字。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="18">
+                <td colspan="4">
+                    思路：** 这个题比较麻烦，还没有做。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=18]').mouseover(function(){
+                    if(showindex!= 18 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=18]').show(100);
+                        showindex= 18 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="19">
+                <td>19</td>
+                <td>已完成</td>
+                <td>Remove Nth Node From End of List    		34.0%	Medium</td>
+                <td>从链表中删除倒数第N个元素</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="19">
+                <td colspan="4">
+                    思路：前后指针找倒数第N个和倒数第N-1个；倒数N-1.next指向N.next即可删除N。	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=19]').mouseover(function(){
+                    if(showindex!= 19 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=19]').show(100);
+                        showindex= 19 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="20">
+                <td>20</td>
+                <td>已完成</td>
+                <td>Valid Parentheses    		35.8%	Easy	</td>
+                <td>验证给定括号字符串是否合法</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="20">
+                <td colspan="4">
+                    思路：用stack，如果左括号则push，右括号则看是否与stack首元素匹配，如果是则pop，不是则直接false。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=20]').mouseover(function(){
+                    if(showindex!= 20 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=20]').show(100);
+                        showindex= 20 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="21">
+                <td>21</td>
+                <td>已完成</td>
+                <td>Merge Two Sorted Lists    		45.7%	Easy	</td>
+                <td>合并两个排序链表为一个新的排序链表</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="21">
+                <td colspan="4">
+                    思路：归并排序的最后一环，只需要不断比较head位置即可。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=21]').mouseover(function(){
+                    if(showindex!= 21 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=21]').show(100);
+                        showindex= 21 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="22">
+                <td>22</td>
+                <td>未完成</td>
+                <td>Generate Parentheses    		53.1%	Medium	</td>
+                <td>生成括号</td>
+            </tr>
+            <tr class="sometimes" style="color: rgb(237, 255, 202); background: rgb(8, 8, 8); display: none;" index="22">
+                <td colspan="4">
+                    思路：** 这个题比较麻烦，还没有做。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=22]').mouseover(function(){
+                    if(showindex!= 22 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=22]').show(100);
+                        showindex= 22 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="23">
+                <td>23</td>
+                <td>已完成</td>
+                <td>Merge k Sorted Lists    		32.9%	Hard</td>
+                <td>合并k个排序链表为一个新的排序链表	</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="23">
+                <td colspan="4">
+                    思路：可以两两合并，然后不断递归，也可以k个head不断往下。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=23]').mouseover(function(){
+                    if(showindex!= 23 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=23]').show(100);
+                        showindex= 23 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="24">
+                <td>24</td>
+                <td>已完成</td>
+                <td>Swap Nodes in Pairs    		43.1%	Medium	</td>
+                <td>成对的交换链表的元素，1-2-3-4   ==》 2-1-4-3</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="24">
+                <td colspan="4">
+                    思路：建立一个守卫在head之前，然后守卫之后的不断互换，最后返回守卫.next
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=24]').mouseover(function(){
+                    if(showindex!= 24 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=24]').show(100);
+                        showindex= 24 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="25">
+                <td>25</td>
+                <td>已完成</td>
+                <td>Reverse Nodes in k-Group    		35.3%	Hard	</td>
+                <td>每k个元素进行反转，如1-2-3-4-5 k=2  2-1-4-3-5</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="25">
+                <td colspan="4">
+                    思路：封装好链表反转的函数，注意好截断的位置前后的连接即可。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=25]').mouseover(function(){
+                    if(showindex!= 25 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=25]').show(100);
+                        showindex= 25 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="26">
+                <td>26</td>
+                <td>已完成</td>
+                <td>Remove Duplicates from Sorted Array    		39.6%	Easy	</td>
+                <td>排序数组去重</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="26">
+                <td colspan="4">
+                    思路：用i遍历，用j记录新的下标
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=26]').mouseover(function(){
+                    if(showindex!= 26 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=26]').show(100);
+                        showindex= 26 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="27">
+                <td>27</td>
+                <td>已完成</td>
+                <td>Remove Element    		43.5%	Easy	</td>
+                <td>数组中删除指定值的元素，返回剩下的元素个数l，并且数组的前l位没有这个值</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="27">
+                <td colspan="4">
+                    思路：遍历，若为值k，则换到后面去
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=27]').mouseover(function(){
+                    if(showindex!= 27 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=27]').show(100);
+                        showindex= 27 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="28">
+                <td>28</td>
+                <td>已完成</td>
+                <td>Implement strStr()    		31.2%	Easy</td>
+                <td>实现strstr函数</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="28">
+                <td colspan="4">
+                    思路：比较简单，就是硬解	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=28]').mouseover(function(){
+                    if(showindex!= 28 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=28]').show(100);
+                        showindex= 28 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="29">
+                <td>29</td>
+                <td>未完成</td>
+                <td>Divide Two Integers    		16.0%	Medium</td>
+                <td>两数字相除</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="29">
+                <td colspan="4">
+                    思路：** 没看懂这个题是要干啥	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=29]').mouseover(function(){
+                    if(showindex!= 29 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=29]').show(100);
+                        showindex= 29 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="30">
+                <td>30</td>
+                <td>未完成</td>
+                <td>Substring with Concatenation of All Words    		23.1%	Hard	</td>
+                <td>给定字符串s和字符串数组a，s中包含用a中所有元素只用一次组成的字符串，则输出这个位置。（可能有多个位置）</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="30">
+                <td colspan="4">
+                    思路：** 这个题比较麻烦，还没有做。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=30]').mouseover(function(){
+                    if(showindex!= 30 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=30]').show(100);
+                        showindex= 30 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="31">
+                <td>31</td>
+                <td>已完成</td>
+                <td>Next Permutation    		30.0%	Medium</td>
+                <td>下一个排列</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="31">
+                <td colspan="4">
+                    思路：这个是排列组合的衍生题目，可以参考这个图 https://leetcode.com/media/original_images/31_Next_Permutation.gif	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=31]').mouseover(function(){
+                    if(showindex!= 31 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=31]').show(100);
+                        showindex= 31 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="32">
+                <td>32</td>
+                <td>未完成</td>
+                <td>Longest Valid Parentheses    		24.9%	Hard	</td>
+                <td>字符串中含有的最长的合法括号</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="32">
+                <td colspan="4">
+                    思路：** 这个题比较麻烦，还没有做。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=32]').mouseover(function(){
+                    if(showindex!= 32 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=32]').show(100);
+                        showindex= 32 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="33">
+                <td>33</td>
+                <td>已完成</td>
+                <td>Search in Rotated Sorted Array    		32.6%	Medium</td>
+                <td>旋转数组的查找</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="33">
+                <td colspan="4">
+                    思路：先用二分找到旋转点，在用二分找目标值	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=33]').mouseover(function(){
+                    if(showindex!= 33 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=33]').show(100);
+                        showindex= 33 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="34">
+                <td>34</td>
+                <td>已完成</td>
+                <td>Find First and Last Position of Element in Sorted Array    		32.9%	Medium</td>
+                <td>找一个值，在数组中第一次和最后一次出现的下标，没出现返回-1</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="34">
+                <td colspan="4">
+                    思路：遍历记录即可。	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=34]').mouseover(function(){
+                    if(showindex!= 34 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=34]').show(100);
+                        showindex= 34 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="35">
+                <td>35</td>
+                <td>已完成</td>
+                <td>Search Insert Position    		40.4%	Easy</td>
+                <td>排序数组，和一个数，求这个数应插入的下标位置</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="35">
+                <td colspan="4">
+                    思路：插入排序的最后一步，只需要遍历比较即可	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=35]').mouseover(function(){
+                    if(showindex!= 35 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=35]').show(100);
+                        showindex= 35 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="36">
+                <td>36</td>
+                <td>已完成</td>
+                <td>Valid Sudoku    		41.8%	Medium</td>
+                <td>给定一个数独的矩阵，判断是不是合法的。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="36">
+                <td colspan="4">
+                    思路：需要计算和是不是能等于9	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=36]').mouseover(function(){
+                    if(showindex!= 36 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=36]').show(100);
+                        showindex= 36 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="37">
+                <td>37</td>
+                <td>未完成</td>
+                <td>Sudoku Solver    		35.5%	Hard</td>
+                <td>给定一个数独的矩阵，并解出来。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="37">
+                <td colspan="4">
+                    思路：** 这个题比较麻烦，还没有做。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=37]').mouseover(function(){
+                    if(showindex!= 37 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=37]').show(100);
+                        showindex= 37 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="38">
+                <td>38</td>
+                <td>已完成</td>
+                <td>Count and Say    		39.5%	Easy</td>
+                <td>题目我没搞明白</td>
+            </tr>
+            <tr class="sometimes" style="color: rgb(237, 255, 202); background: rgb(8, 8, 8); display: none;" index="38">
+                <td colspan="4">
+                    思路：题目我没搞明白	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=38]').mouseover(function(){
+                    if(showindex!= 38 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=38]').show(100);
+                        showindex= 38 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="39">
+                <td>39</td>
+                <td>DFS</td>
+                <td>Combination Sum    		46.6%	Medium	</td>
+                <td>sum为给定值的组合，全部列出。如[1,2,3,5] target=6 则有 15 123 111111 222 33这几种，每种元素可以使用多次</td>
+            </tr>
+            <tr class="sometimes" style="color: rgb(237, 255, 202); background: rgb(8, 8, 8); display: none;" index="39">
+                <td colspan="4">
+                    思路：DFS 截止条件 和&gt;=target；候选人 所有人；筛选条件 值本身要比target小，没被选过的；值就是target的可以单独处理一下
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=39]').mouseover(function(){
+                    if(showindex!= 39 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=39]').show(100);
+                        showindex= 39 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="40">
+                <td>40</td>
+                <td>DFS</td>
+                <td>Combination Sum II    		40.1%	Medium	</td>
+                <td>与39类似，只不过每个数字只能最多用一次</td>
+            </tr>
+            <tr class="sometimes" style="color: rgb(237, 255, 202); background: rgb(8, 8, 8); display: none;" index="40">
+                <td colspan="4">
+                    思路：DFS 截止条件 和&gt;=target；候选人 下标比当前大的；
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=40]').mouseover(function(){
+                    if(showindex!= 40 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=40]').show(100);
+                        showindex= 40 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="41">
+                <td>41</td>
+                <td>已完成</td>
+                <td>First Missing Positive    		28.2%	Hard	</td>
+                <td>找第一个缺少的正数 [1,-1,2,4,9] 返回3</td>
+            </tr>
+            <tr class="sometimes" style="color: rgb(237, 255, 202); background: rgb(8, 8, 8); display: none;" index="41">
+                <td colspan="4">
+                    思路：第一步将正数放在数组前部，负数交换到后面。第二步正数部分进行遍历，每个数字放到下标-1的位置，如果是大于数组长度了则放到j位置，j
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=41]').mouseover(function(){
+                    if(showindex!= 41 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=41]').show(100);
+                        showindex= 41 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="42">
+                <td>42</td>
+                <td>未完成</td>
+                <td>Trapping Rain Water    		41.8%	Hard	</td>
+                <td>盛水问题2</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="42">
+                <td colspan="4">
+                    思路：** 这个题比较麻烦，还没有做。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=42]').mouseover(function(){
+                    if(showindex!= 42 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=42]').show(100);
+                        showindex= 42 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="43">
+                <td>43</td>
+                <td>已完成</td>
+                <td>Multiply Strings    		29.9%	Medium</td>
+                <td>计算两个数的乘积，输入的是字符串数字</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="43">
+                <td colspan="4">
+                    思路：用笔算乘法的实现方式	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=43]').mouseover(function(){
+                    if(showindex!= 43 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=43]').show(100);
+                        showindex= 43 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="44">
+                <td>44</td>
+                <td>未完成</td>
+                <td>Wildcard Matching    		22.3%	Hard	</td>
+                <td>字符串正则匹配</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="44">
+                <td colspan="4">
+                    思路：** 没做
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=44]').mouseover(function(){
+                    if(showindex!= 44 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=44]').show(100);
+                        showindex= 44 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="45">
+                <td>45</td>
+                <td>已完成</td>
+                <td>Jump Game II    		27.4%	Hard	</td>
+                <td>跳跃游戏，从数组0位置开始每次最多能跳a[i]步，问最少多少步跳到结尾</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="45">
+                <td colspan="4">
+                    思路：反向思维，p=len-1位置，看能跳到p点的下标最小的点。然后p=i继续循环直到p=0
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=45]').mouseover(function(){
+                    if(showindex!= 45 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=45]').show(100);
+                        showindex= 45 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="46">
+                <td>46</td>
+                <td>DFS</td>
+                <td>Permutations    		53.3%	Medium	</td>
+                <td>全排列</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="46">
+                <td colspan="4">
+                    思路：DFS 截止条件 n个坑位已满；候选人 所有人；筛选条件 已在前面坑位被使用的，不能在这个坑位使用
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=46]').mouseover(function(){
+                    if(showindex!= 46 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=46]').show(100);
+                        showindex= 46 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="47">
+                <td>47</td>
+                <td>DFS</td>
+                <td>Permutations II    		39.1%	Medium	</td>
+                <td>全排列 但是有重复元素</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="47">
+                <td colspan="4">
+                    思路：DFS 截止条件 n个坑位已满；候选人 所有人；筛选条件 记录每个候选人可用个数，个数&lt;1的不能使用
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=47]').mouseover(function(){
+                    if(showindex!= 47 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=47]').show(100);
+                        showindex= 47 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="48">
+                <td>48</td>
+                <td>已完成</td>
+                <td>Rotate Image    		46.7%	Medium	</td>
+                <td>旋转90，二维数组</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="48">
+                <td colspan="4">
+                    思路：找到对应位置进行交换即可
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=48]').mouseover(function(){
+                    if(showindex!= 48 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=48]').show(100);
+                        showindex= 48 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="49">
+                <td>49</td>
+                <td>已完成</td>
+                <td>Group Anagrams    		44.6%	Medium</td>
+                <td>给定字符串数组，将这个数组分组。每组的字符串的字符构成相同。</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="49">
+                <td colspan="4">
+                    思路：看似是排列问题，实则不需要深度优先遍历。Map记录 字符串转字符数组sort再转回字符串 - 由这些字符构成的字符串list	
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=49]').mouseover(function(){
+                    if(showindex!= 49 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=49]').show(100);
+                        showindex= 49 ;
+                    }
+                })
+            </script>
+            
+            <tr class="always" index="50">
+                <td>50</td>
+                <td>已完成</td>
+                <td>Pow(x, n)    </td>
+                <td>计算幂</td>
+            </tr>
+            <tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="50">
+                <td colspan="4">
+                    思路：拆分 f(x,n)=f(x,n/2)*f(x,n/2)[*x]根据n奇偶判断是否再×个x。
+                </td>
+            </tr>
+            <script>
+                
+                $('.always[index=50]').mouseover(function(){
+                    if(showindex!= 50 ){
+                        $('.sometimes[index='+showindex+']').hide();
+                        $('.sometimes[index=50]').show(100);
+                        showindex= 50 ;
+                    }
+                })
+            </script>
+
+<tr class="always" index="51">
+    <td>51</td>
+    <td>未做</td>
+    <td>n皇后（hard）</td>
+    <td>nxn棋盘上，放置n个皇后的放法，每种放发都打印</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="51">
+    <td colspan="4">
+        思路：dfs暴力遍历所有情况
+    </td>
+</tr>
+<script>
+    $('.always[index=51]').mouseover(function(){
+        if(showindex!= 51 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=51]').show(100);
+            showindex= 51 ;
+        }
+    })
+</script>
+
+<tr class="always" index="52">
+    <td>52</td>
+    <td>未做</td>
+    <td>n皇后2（hard）</td>
+    <td>上一题，但是只求有多少种放法</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="52">
+    <td colspan="4">
+        思路：同上
+    </td>
+</tr>
+<script>
+    $('.always[index=52]').mouseover(function(){
+        if(showindex!= 52 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=52]').show(100);
+            showindex= 52 ;
+        }
+    })
+</script>
+
+<tr class="always" index="53">
+    <td>53</td>
+    <td>完成</td>
+    <td>最大子序和（easy）</td>
+    <td>连续子数组和最大，返回最大和</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="53">
+    <td colspan="4">
+        思路：dp[i]表示第i个为结尾的连续数组最大的和，记录dp[i]最大值
+    </td>
+</tr>
+<script>
+    $('.always[index=53]').mouseover(function(){
+        if(showindex!= 53 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=53]').show(100);
+            showindex= 53 ;
+        }
+    })
+</script>
+
+<tr class="always" index="54">
+    <td>54</td>
+    <td>完成</td>
+    <td>螺旋矩阵（mid)</td>
+    <td>顺时针打印数组</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="54">
+    <td colspan="4">
+        思路：先写个mxn次的循环防止多加或少加，然后用dir标识方向右下左上；右边到头了，方向改为向下，以此类推，最后判断方向进行i或j的加减。
+    </td>
+</tr>
+<script>
+    $('.always[index=54]').mouseover(function(){
+        if(showindex!= 54 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=54]').show(100);
+            showindex= 54 ;
+        }
+    })
+</script>
+
+<tr class="always" index="55">
+    <td>55</td>
+    <td>完成</td>
+    <td>跳跃游戏（mid）</td>
+    <td>非负数组，从0开始跳跃，跳跃长度是0-当前值，求是否能跳到最后一个点。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="55">
+    <td colspan="4">
+        思路：从后往前，找到i+nums[i]>=lastIndex的话，就把lastIndex改为i，O(n)
+    </td>
+</tr>
+<script>
+    $('.always[index=55]').mouseover(function(){
+        if(showindex!= 55 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=55]').show(100);
+            showindex= 55 ;
+        }
+    })
+</script>
+
+<tr class="always" index="56">
+    <td>56</td>
+    <td>完成</td>
+    <td>合并区间（mid）</td>
+    <td>多个闭区间进行合并例如[1,3][2,6][8,9]合并为[1,6][8,9]</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="56">
+    <td colspan="4">
+        思路：按照a[0]排序，不断比较list[i][1]和list[i+1][0]进行合并
+    </td>
+</tr>
+<script>
+    $('.always[index=56]').mouseover(function(){
+        if(showindex!= 56 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=56]').show(100);
+            showindex= 56 ;
+        }
+    })
+</script>
+
+<tr class="always" index="57">
+    <td>57</td>
+    <td>未做</td>
+    <td>插入区间（mid）</td>
+    <td>题目跟56类似，但是给定的是没有交集的区间集合，然后插入一个新的区间，返回合并后的结果。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="57">
+    <td colspan="4">
+        思路：放到一个数组里排序，然后按照56的做吧，也可以单独排序后，二分插入，但是比较容易写错代码。
+    </td>
+</tr>
+<script>
+    $('.always[index=57]').mouseover(function(){
+        if(showindex!= 57 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=57]').show(100);
+            showindex= 57 ;
+        }
+    })
+</script>
+
+<tr class="always" index="58">
+    <td>58</td>
+    <td>完成</td>
+    <td>最后一个单词长度（easy）</td>
+    <td>一段字符串中最后一个单词的长度</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="58">
+    <td colspan="4">
+        思路：记录pre和cur，cur是遇到' '就设置为0，pre是cur设置为0的之前记录前一次非零的cur值，最后求cur不为0就是cur，否则是pre。
+    </td>
+</tr>
+<script>
+    $('.always[index=58]').mouseover(function(){
+        if(showindex!= 58 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=58]').show(100);
+            showindex= 58 ;
+        }
+    })
+</script>
+
+<tr class="always" index="59">
+    <td>59</td>
+    <td>完成</td>
+    <td>螺旋矩阵2（mid）</td>
+    <td>1-n^2顺时针放置到nxn的矩阵中</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="59">
+    <td colspan="4">
+        思路：与54完全一致，只不过是之前是打印，现在是赋值。
+    </td>
+</tr>
+<script>
+    $('.always[index=59]').mouseover(function(){
+        if(showindex!= 59 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=59]').show(100);
+            showindex= 59 ;
+        }
+    })
+</script>
+
+<tr class="always" index="60">
+    <td>60</td>
+    <td>完成</td>
+    <td>排列序列（hard）</td>
+    <td>找到1-n的全排列的第k个元素，返回</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="60">
+    <td colspan="4">
+        思路：1-n前排列有n!个，1-n开头的分别有(n-1)!个，所以k/(n-1)!就能算出第一个数字下标，然后k=k%(n-1)!再去拿第二个数下标，但注意用过的数不能再用，所以用过的数需要从list中删除。
+    </td>
+</tr>
+<script>
+    $('.always[index=60]').mouseover(function(){
+        if(showindex!= 60 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=60]').show(100);
+            showindex= 60 ;
+        }
+    })
+</script>
+
+<tr class="always" index="61">
+    <td>61</td>
+    <td>未完成</td>
+    <td>旋转链表（mid）</td>
+    <td>长度为n的链表，将倒数k个节点，放到最前面</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="61">
+    <td colspan="4">
+        思路：找到倒数第k-1个，然后转。
+    </td>
+</tr>
+<script>
+    $('.always[index=61]').mouseover(function(){
+        if(showindex!= 61 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=61]').show(100);
+            showindex= 61 ;
+        }
+    })
+</script>
+
+<tr class="always" index="62">
+    <td>62</td>
+    <td>完成</td>
+    <td>不同路径（mid）</td>
+    <td>mxn的矩阵从左上角到右下角的走法有多少种</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="62">
+    <td colspan="4">
+        思路：dp第一行第一列是1，其他的dp[i][j]=dp[i-1][j]+dp[i][j-1]
+    </td>
+</tr>
+<script>
+    $('.always[index=62]').mouseover(function(){
+        if(showindex!= 62 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=62]').show(100);
+            showindex= 62 ;
+        }
+    })
+</script>
+
+<tr class="always" index="63">
+    <td>63</td>
+    <td>完成</td>
+    <td>不同路径2（mid）</td>
+    <td>同上，但是矩阵有0，1，其中1不能走。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="63">
+    <td colspan="4">
+        思路：也同上，只不过arr[i][j]=1的时候dp[i][j]直接为0
+    </td>
+</tr>
+<script>
+    $('.always[index=63]').mouseover(function(){
+        if(showindex!= 63 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=63]').show(100);
+            showindex= 63 ;
+        }
+    })
+</script>
+
+<tr class="always" index="64">
+    <td>64</td>
+    <td>完成</td>
+    <td>最小路径和（mid）</td>
+    <td>还是左上到右下，每个格子有个数，路径是这些数求和，求最短的路径，返回这个和。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="64">
+    <td colspan="4">
+        思路：还是DP，dp[i][j]=min(左，上)+arr[i][j]。这个题也可以带优先队列的bfs(迪杰斯特拉)，但是dp更清晰。
+    </td>
+</tr>
+<script>
+    $('.always[index=64]').mouseover(function(){
+        if(showindex!= 64 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=64]').show(100);
+            showindex= 64 ;
+        }
+    })
+</script>
+
+<tr class="always" index="65">
+    <td>65</td>
+    <td>未完成</td>
+    <td>有效数字（hard)</td>
+    <td>小数、整数、数字+ e或E + 数字</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="65">
+    <td colspan="4">
+        思路：按照e/E分开，前面的仔细校验，后面的仔细校验就行，细节比价多，应该面试不可能考。
+    </td>
+</tr>
+<script>
+    $('.always[index=65]').mouseover(function(){
+        if(showindex!= 65 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=65]').show(100);
+            showindex= 65 ;
+        }
+    })
+</script>
+
+<tr class="always" index="66">
+    <td>66</td>
+    <td>完成</td>
+    <td>加一（easy）</td>
+    <td>[1,2,3]=>[1,2,4] [9,9,9]=>[1,0,0,0]</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="66">
+    <td colspan="4">
+        思路：i指向最后一个元素，+1，不到10就返回了，到10进位，i--。如果i==-1了，需要补一位1在最前面。
+    </td>
+</tr>
+<script>
+    $('.always[index=66]').mouseover(function(){
+        if(showindex!= 66 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=66]').show(100);
+            showindex= 66 ;
+        }
+    })
+</script>
+
+<tr class="always" index="67">
+    <td>67</td>
+    <td>完成</td>
+    <td>二进制求和（easy）</td>
+    <td>给俩二进制字符串，返回求和结果</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="67">
+    <td colspan="4">
+        思路：注意进位就行了。
+    </td>
+</tr>
+<script>
+    $('.always[index=67]').mouseover(function(){
+        if(showindex!= 67 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=67]').show(100);
+            showindex= 67 ;
+        }
+    })
+</script>
+
+<tr class="always" index="68">
+    <td>68</td>
+    <td>未完成</td>
+    <td>左右文本对齐（hard）</td>
+    <td>这个题就是耐心点就行，不可能考</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="68">
+    <td colspan="4">
+        思路：不会考的放心。
+    </td>
+</tr>
+<script>
+    $('.always[index=68]').mouseover(function(){
+        if(showindex!= 68 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=68]').show(100);
+            showindex= 68 ;
+        }
+    })
+</script>
+
+<tr class="always" index="69">
+    <td>69</td>
+    <td>完成</td>
+    <td>x的平方根（easy）</td>
+    <td>求x的平方根，只需要返回整数部分即可。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="69">
+    <td colspan="4">
+        思路：一定是个0-x的数，二分找就行了。
+    </td>
+</tr>
+<script>
+    $('.always[index=69]').mouseover(function(){
+        if(showindex!= 69 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=69]').show(100);
+            showindex= 69 ;
+        }
+    })
+</script>
+
+<tr class="always" index="70">
+    <td>70</td>
+    <td>完成</td>
+    <td>爬楼梯（easy）</td>
+    <td>可以爬1或2步，求到楼顶的走法有多少种。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="70">
+    <td colspan="4">
+        思路：dp[i] = dp[i] + dp[i-1]
+    </td>
+</tr>
+<script>
+    $('.always[index=70]').mouseover(function(){
+        if(showindex!= 70 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=70]').show(100);
+            showindex= 70 ;
+        }
+    })
+</script>
+
+<tr class="always" index="71">
+    <td>71</td>
+    <td>未完成</td>
+    <td>简化路径（mid)</td>
+    <td>/home//./foo/.. 简化为 /home</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="71">
+    <td colspan="4">
+        思路：stack存每一级路径，最后拼起来，..是要pop的
+    </td>
+</tr>
+<script>
+    $('.always[index=71]').mouseover(function(){
+        if(showindex!= 71 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=71]').show(100);
+            showindex= 71 ;
+        }
+    })
+</script>
+
+<tr class="always" index="72">
+    <td>72</td>
+    <td>完成</td>
+    <td>编辑距离（hard)</td>
+    <td>一个单词变成另一个单词要编辑几次，插删改三种操作。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="72">
+    <td colspan="4">
+        思路：dp[i][j]标识word1[0:i]变成word2[0:j]最少多少步，dp[i][j] = word1[i]==word2[j] ? 左上角 : min(左上,左,上)+1; 相同则左上变换即可，不同可以通过左上+改，上+插，删+左，三种方式实现，取最小的一个即可。
+    </td>
+</tr>
+<script>
+    $('.always[index=72]').mouseover(function(){
+        if(showindex!= 72 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=72]').show(100);
+            showindex= 72 ;
+        }
+    })
+</script>
+
+<tr class="always" index="73">
+    <td>73</td>
+    <td>完成</td>
+    <td>矩阵置零（mid）</td>
+    <td>将矩阵中0所在的行列都置为0</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="73">
+    <td colspan="4">
+        思路：基本的思想是两个list存要置零的行和列，然后再来一遍置零。但是要求O(1)额外空间，所以可以利用第0行和第0列来做这个list。
+    </td>
+</tr>
+<script>
+    $('.always[index=73]').mouseover(function(){
+        if(showindex!= 73 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=73]').show(100);
+            showindex= 73 ;
+        }
+    })
+</script>
+
+<tr class="always" index="74">
+    <td>74</td>
+    <td>完成</td>
+    <td>搜索二维矩阵（mid）</td>
+    <td>矩阵，每行从左到右自增，第一个元素大于上一行最后一个。查找target</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="74">
+    <td colspan="4">
+        思路：摊开，二分。
+    </td>
+</tr>
+<script>
+    $('.always[index=74]').mouseover(function(){
+        if(showindex!= 74 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=74]').show(100);
+            showindex= 74 ;
+        }
+    })
+</script>
+
+<tr class="always" index="75">
+    <td>75</td>
+    <td>完成</td>
+    <td>颜色分类（mid）</td>
+    <td>0，1，2三种颜色的球组成的数组，混乱的。给他们排序输出。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="75">
+    <td colspan="4">
+        思路：ijk分别记录012的count，然后重新赋值。
+    </td>
+</tr>
+<script>
+    $('.always[index=75]').mouseover(function(){
+        if(showindex!= 75 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=75]').show(100);
+            showindex= 75 ;
+        }
+    })
+</script>
+
+<tr class="always" index="76">
+    <td>76</td>
+    <td>未完成</td>
+    <td>最小覆盖子串（hard）</td>
+    <td>字符串s中找到最小的连续子串，含有字符串t中所有字符(重复字符则按照含有多个)。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="76">
+    <td colspan="4">
+        思路：滑动窗口，经典题目，需要再看看。
+    </td>
+</tr>
+<script>
+    $('.always[index=76]').mouseover(function(){
+        if(showindex!= 76 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=76]').show(100);
+            showindex= 76 ;
+        }
+    })
+</script>
+
+<tr class="always" index="77">
+    <td>77</td>
+    <td>完成</td>
+    <td>组合（mid）</td>
+    <td>1-n数字中选出k个，求所有的组合</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="77">
+    <td colspan="4">
+        思路：经典dfs。
+    </td>
+</tr>
+<script>
+    $('.always[index=77]').mouseover(function(){
+        if(showindex!= 77 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=77]').show(100);
+            showindex= 77 ;
+        }
+    })
+</script>
+
+<tr class="always" index="78">
+    <td>78</td>
+    <td>完成</td>
+    <td>子集（mid）</td>
+    <td>求数组的所有子集，子集就是选出0-n个的组合</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="78">
+    <td colspan="4">
+        思路：经典dfs，上一题稍微修改为任意长度都存入结果。
+    </td>
+</tr>
+<script>
+    $('.always[index=78]').mouseover(function(){
+        if(showindex!= 78 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=78]').show(100);
+            showindex= 78 ;
+        }
+    })
+</script>
+
+<tr class="always" index="79">
+    <td>79</td>
+    <td>完成</td>
+    <td>单词搜索（mid）</td>
+    <td>char矩阵，上下左右走，走出一个给定单词。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="79">
+    <td colspan="4">
+        思路：dfs，用一个boolean数组记录是不是走过。
+    </td>
+</tr>
+<script>
+    $('.always[index=79]').mouseover(function(){
+        if(showindex!= 79 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=79]').show(100);
+            showindex= 79 ;
+        }
+    })
+</script>
+
+<tr class="always" index="80">
+    <td>80</td>
+    <td>完成</td>
+    <td>删除有序数组的重复项2（mid）</td>
+    <td>重复项最多保留两项。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="80">
+    <td colspan="4">
+        思路：O(n)往后找，lastEquals记录当前最后出现的下标。
+    </td>
+</tr>
+<script>
+    $('.always[index=80]').mouseover(function(){
+        if(showindex!= 80 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=80]').show(100);
+            showindex= 80 ;
+        }
+    })
+</script>
+
+<tr class="always" index="81">
+    <td>81</td>
+    <td>未完成</td>
+    <td>搜索旋转排序数组2（mid）</td>
+    <td>非递减的数组，（1是递增）去找target是否在数组中。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="81">
+    <td colspan="4">
+        思路：二分，mid大于target的话，mid和left right的比较，确定mid的处境。
+    </td>
+</tr>
+<script>
+    $('.always[index=81]').mouseover(function(){
+        if(showindex!= 81 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=81]').show(100);
+            showindex= 81 ;
+        }
+    })
+</script>
+
+<tr class="always" index="82">
+    <td>82</td>
+    <td>完成</td>
+    <td>删除排序链表中的重复元素2（mid）</td>
+    <td>1->1->2->3->3->5->6->6 删除后 2->5</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="82">
+    <td colspan="4">
+        思路：两重循环，内循环当前元素的值和下一个元素的值一致，则向后移动，并设置一个boolean值决定是否add，重复的不add。
+    </td>
+</tr>
+<script>
+    $('.always[index=82]').mouseover(function(){
+        if(showindex!= 82 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=82]').show(100);
+            showindex= 82 ;
+        }
+    })
+</script>
+
+<tr class="always" index="83">
+    <td>83</td>
+    <td>完成</td>
+    <td>删除排序链表中的重复元素（easy）</td>
+    <td>与上题类似，但是上一题把所有重复元素都删了，这一题保留一个。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="83">
+    <td colspan="4">
+        思路：双重循环，记录cur最后出现的位置来add，比82题少个boolean值。
+    </td>
+</tr>
+<script>
+    $('.always[index=83]').mouseover(function(){
+        if(showindex!= 83 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=83]').show(100);
+            showindex= 83 ;
+        }
+    })
+</script>
+
+<tr class="always" index="84">
+    <td>84</td>
+    <td>未完成</td>
+    <td>柱状图中最大的矩形（hard）</td>
+    <td>求在该柱状图中，能够勾勒出来的矩形的最大面积。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="84">
+    <td colspan="4">
+        思路：单调栈。
+    </td>
+</tr>
+<script>
+    $('.always[index=84]').mouseover(function(){
+        if(showindex!= 84 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=84]').show(100);
+            showindex= 84 ;
+        }
+    })
+</script>
+
+<tr class="always" index="85">
+    <td>85</td>
+    <td>未完成</td>
+    <td>最大矩形（hard）</td>
+    <td>给定0,1矩阵，求最大的1组成的矩形的面积</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="85">
+    <td colspan="4">
+        思路：单调栈。
+    </td>
+</tr>
+<script>
+    $('.always[index=85]').mouseover(function(){
+        if(showindex!= 85 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=85]').show(100);
+            showindex= 85 ;
+        }
+    })
+</script>
+
+<tr class="always" index="86">
+    <td>86</td>
+    <td>完成</td>
+    <td>分割链表（mid）</td>
+    <td>将链表中<x和>=x的分开，且保持原有先后顺序。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="86">
+    <td colspan="4">
+        思路：找俩哨兵分别往后追加小于x，和大于等于x的节点，最后拼起来，注意如果哨兵1号后面没人直接返回哨兵2.next。
+    </td>
+</tr>
+<script>
+    $('.always[index=86]').mouseover(function(){
+        if(showindex!= 86 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=86]').show(100);
+            showindex= 86 ;
+        }
+    })
+</script>
+
+<tr class="always" index="87">
+    <td>87</td>
+    <td>未完成</td>
+    <td>扰乱字符串（hard）</td>
+    <td>题意没看懂，拉倒了</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="87">
+    <td colspan="4">
+        思路：没思路，抄答案吧
+    </td>
+</tr>
+<script>
+    $('.always[index=87]').mouseover(function(){
+        if(showindex!= 87 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=87]').show(100);
+            showindex= 87 ;
+        }
+    })
+</script>
+
+<tr class="always" index="88">
+    <td>88</td>
+    <td>完成</td>
+    <td>合成2个有序数组（easy）</td>
+    <td>给俩排序数组，第一个数组是冗余长的，合成后返回数组1</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="88">
+    <td colspan="4">
+        思路：从后往前先放大的。
+    </td>
+</tr>
+<script>
+    $('.always[index=88]').mouseover(function(){
+        if(showindex!= 88 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=88]').show(100);
+            showindex= 88 ;
+        }
+    })
+</script>
+
+<tr class="always" index="89">
+    <td>89</td>
+    <td>完成</td>
+    <td>格雷编码（mid）</td>
+    <td>求n位格雷编码的列表，格雷编码是相邻2个编码只差一位的编码。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="89">
+    <td colspan="4">
+        思路：通信原理学过格雷编码=i ^ (i>>1)
+    </td>
+</tr>
+<script>
+    $('.always[index=89]').mouseover(function(){
+        if(showindex!= 89 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=89]').show(100);
+            showindex= 89 ;
+        }
+    })
+</script>
+
+<tr class="always" index="90">
+    <td>90</td>
+    <td>完成</td>
+    <td>子集2（mid）</td>
+    <td>相比于78子集1，这个题是有重复元素的。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="90">
+    <td colspan="4">
+        思路：带count的dfs。
+    </td>
+</tr>
+<script>
+    $('.always[index=90]').mouseover(function(){
+        if(showindex!= 90 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=90]').show(100);
+            showindex= 90 ;
+        }
+    })
+</script>
+
+<tr class="always" index="91">
+    <td>91</td>
+    <td>完成</td>
+    <td>解码方法（mid）</td>
+    <td>1-A 2-B...26-Z，现在给定数字字符串，如12，求有几种解码方法。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="91">
+    <td colspan="4">
+        思路：类似ip的题，dp求方法数，dfs求种类。
+    </td>
+</tr>
+<script>
+    $('.always[index=91]').mouseover(function(){
+        if(showindex!= 91 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=91]').show(100);
+            showindex= 91 ;
+        }
+    })
+</script>
+
+<tr class="always" index="92">
+    <td>92</td>
+    <td>完成</td>
+    <td>反转链表2（mid）</td>
+    <td>反转指定的一部分链表，而不是全部。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="92">
+    <td colspan="4">
+        思路：找到指定的区间，记录区间前一个节点和后一个节点，反转，接上。
+    </td>
+</tr>
+<script>
+    $('.always[index=92]').mouseover(function(){
+        if(showindex!= 92 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=92]').show(100);
+            showindex= 92 ;
+        }
+    })
+</script>
+
+<tr class="always" index="93">
+    <td>93</td>
+    <td>完成</td>
+    <td>复原ip地址（mid）</td>
+    <td>ip地址没了.请复原，例如255255112可以是255.255.11.2 255.255.1.12等等。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="93">
+    <td colspan="4">
+        思路：dfs求解每一种，dp可以求有几种。
+    </td>
+</tr>
+<script>
+    $('.always[index=93]').mouseover(function(){
+        if(showindex!= 93 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=93]').show(100);
+            showindex= 93 ;
+        }
+    })
+</script>
+
+<tr class="always" index="94">
+    <td>94</td>
+    <td>完成</td>
+    <td>二叉树的中序遍历（easy）</td>
+    <td>如题</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="94">
+    <td colspan="4">
+        思路：dfs
+    </td>
+</tr>
+<script>
+    $('.always[index=94]').mouseover(function(){
+        if(showindex!= 94 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=94]').show(100);
+            showindex= 94 ;
+        }
+    })
+</script>
+
+<tr class="always" index="95">
+    <td>95</td>
+    <td>未完成</td>
+    <td>不同的BST 2（mid）</td>
+    <td>求1-n组成的所有bst情况</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="95">
+    <td colspan="4">
+        思路：
+    </td>
+</tr>
+<script>
+    $('.always[index=95]').mouseover(function(){
+        if(showindex!= 95 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=95]').show(100);
+            showindex= 95 ;
+        }
+    })
+</script>
+
+<tr class="always" index="96">
+    <td>96</td>
+    <td>未完成</td>
+    <td>不同的BST（mid）</td>
+    <td>同95但只返回种数。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="96">
+    <td colspan="4">
+        思路：
+    </td>
+</tr>
+<script>
+    $('.always[index=96]').mouseover(function(){
+        if(showindex!= 96 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=96]').show(100);
+            showindex= 96 ;
+        }
+    })
+</script>
+
+<tr class="always" index="97">
+    <td>97</td>
+    <td>完成</td>
+    <td>交错字符串（中等）</td>
+    <td>长度为m的字符串s1和长度为n的字符串s2，能否拼接成长度为m+n的字符串s3.</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="97">
+    <td colspan="4">
+        思路：dp[i][j]代表s1前i和s2前j是否组成s3前i+j，如果s1当前位置和s3对应位置一样，则看dp[i-1][j]，如果s2当前位置和s3对应一致，则看dp[i][j-1]，加一行一列哨兵可以辅助解题。
+    </td>
+</tr>
+<script>
+    $('.always[index=97]').mouseover(function(){
+        if(showindex!= 97 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=97]').show(100);
+            showindex= 97 ;
+        }
+    })
+</script>
+
+<tr class="always" index="98">
+    <td>98</td>
+    <td>完成</td>
+    <td>验证BST（mid）</td>
+    <td>验证给定的tree是不是BST</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="98">
+    <td colspan="4">
+        思路：dfs是从小到大。
+    </td>
+</tr>
+<script>
+    $('.always[index=98]').mouseover(function(){
+        if(showindex!= 98 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=98]').show(100);
+            showindex= 98 ;
+        }
+    })
+</script>
+
+<tr class="always" index="99">
+    <td>99</td>
+    <td>未完成</td>
+    <td>恢复BST（mid）</td>
+    <td>BST中两个node互换了位置，请复原。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="99">
+    <td colspan="4">
+        思路：dfs中序，找到不满足从小到大的地方。再来一遍找到该置换的节点。
+    </td>
+</tr>
+<script>
+    $('.always[index=99]').mouseover(function(){
+        if(showindex!= 99 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=99]').show(100);
+            showindex= 99 ;
+        }
+    })
+</script>
+
+<tr class="always" index="100">
+    <td>100</td>
+    <td>完成</td>
+    <td>相同的树（easy）</td>
+    <td>验证两个tree是否一样。</td>
+</tr>
+<tr class="sometimes" style="display:none;color: #edffca;background: #080808;" index="100">
+    <td colspan="4">
+        思路：都是null || 都不是null&&值一样&&递归左&&递归右
+    </td>
+</tr>
+<script>
+    $('.always[index=100]').mouseover(function(){
+        if(showindex!= 100 ){
+            $('.sometimes[index='+showindex+']').hide();
+            $('.sometimes[index=100]').show(100);
+            showindex= 100 ;
+        }
+    })
+</script>
+
+
+    
+            
+            
+            
+        </tbody>
+    </table>
+    
+
+
+</body></html>
